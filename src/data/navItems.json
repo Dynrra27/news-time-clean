@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Inicio", "path": "/", "icon": "fas fa-home" },
+  { "id": 2, "name": "Perfil", "path": "/profile", "icon": "fas fa-user" },
+  { "id": 3, "name": "Mensajes", "path": "/messages", "icon": "fas fa-envelope" },
+  { "id": 4, "name": "Noticias", "path": "/news", "icon": "fas fa-newspaper" },
+  { "id": 5, "name": "Tienda", "path": "/shop", "icon": "fas fa-store" },
+  { "id": 6, "name": "Empleos", "path": "/jobs", "icon": "fas fa-briefcase" }
+]

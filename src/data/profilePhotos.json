@@ -1,0 +1,18 @@
+{
+  "photos": [
+    { "id": 1, "url": "/src/assets/posts/post9.jpg" },
+    { "id": 2, "url": "/src/assets/posts/post13.jpg" },
+    { "id": 3, "url": "/src/assets/posts/post3.jpg" },
+    { "id": 4, "url": "/src/assets/posts/post15.jpg" },
+    { "id": 5, "url": "/src/assets/posts/post12.jpg" },
+    { "id": 6, "url": "/src/assets/posts/post11.jpg" }
+  ],
+  "videos": [
+    { "id": 1, "title": "Mi primer video", "url": "/src/assets/videos/video1.mp4" },
+    { "id": 2, "title": "Mi segundo video", "url": "/src/assets/videos/video2.mp4" }
+  ],
+  "music": [
+    { "id": 1, "title": "Canción de Prueba 1", "artist": "Artista 1" },
+    { "id": 2, "title": "Canción de Prueba 2", "artist": "Artista 2" }
+  ]
+}

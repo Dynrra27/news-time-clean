@@ -1,0 +1,22 @@
+src/
+├── assets/
+│   ├── avatar/
+│   ├── company/
+│   ├── posts/
+│   ├── person/
+│   └── ads/
+├── components/
+│   ├── feed/
+|   ├──l
+│   ├── navbar/
+│   ├── sidebar/
+│   └── profile/
+├── data/
+│   ├── posts.json
+│   └── ...
+├── pages/
+│   └── home/
+└── App.jsx
+└── main.jsx
+└── index.css
+/*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*/

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "userAvatar": "/src/assets/person/user.jpg",
+    "userName": "Dynrra Garcia",
+    "timeAgo": "Hace 5 minutos",
+    "text": "¡Qué día tan increíble en la playa! ¡Amo el sol y el mar!",
+    "image": "/src/assets/posts/post1.jpg",
+    "likes": 120,
+    "commentsCount": 15,
+    "views": 2500
+  },
+  {
+    "id": 2,
+    "userAvatar": "/src/assets/person/person1.jpg",
+    "userName": "Carlos Pérez",
+    "timeAgo": "Hace 2 horas",
+    "text": "Trabajando en mi nuevo proyecto de diseño web. ¡Me encanta este reto!",
+    "image": null,
+    "likes": 85,
+    "commentsCount": 7,
+    "views": 1800
+  },
+  {
+    "id": 3,
+    "userAvatar": "/src/assets/person/person2.jpg",
+    "userName": "AnaUser",
+    "timeAgo": "Hace un día",
+    "text": "Un buen café para empezar el día. ☕",
+    "image": "/src/assets/posts/post2.jpg",
+    "likes": 200,
+    "commentsCount": 35,
+    "views": 4000
+  }
+]

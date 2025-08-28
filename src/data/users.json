@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Dynrra Garcia",
+      "avatar": "/src/assets/person/user.jpg"
+    },
+    {
+      "id": 2,
+      "username": "Carlos Pérez",
+      "avatar": "/src/assets/person/person1.jpg"
+    },
+    {
+      "id": 3,
+      "username": "AnaUser",
+      "avatar": "/src/assets/person/person2.jpg"
+    },
+    {
+      "id": 4,
+      "username": "EmpresaTech",
+      "avatar": "/src/assets/company/2.png"
+    }
+  ]
+}

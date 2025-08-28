@@ -1,0 +1,28 @@
+{
+  "about": {
+    "bio": "Soy un diseñador gráfico y desarrollador web apasionado por crear experiencias digitales innovadoras. Me encanta el cine, la música y los deportes al aire libre. Siempre buscando aprender nuevas tecnologías y colaborar en proyectos creativos.",
+    "details": [
+      { "label": "Ciudad", "value": "Santo Domingo" },
+      { "label": "Educación", "value": "Universidad Apec" },
+      { "label": "Trabajo", "value": "Diseñador Gráfico en Tech Solutions" },
+      { "label": "Intereses", "value": "Diseño, Programación, Cine, Música, Viajes" }
+    ]
+  },
+  "friends": [
+    { "id": 1, "name": "Carlos Pérez", "avatar": "/src/assets/person/person1.jpg" },
+    { "id": 2, "name": "Ana Gómez", "avatar": "/src/assets/person/person2.jpg" },
+    { "id": 3, "name": "Juan Ramírez", "avatar": "/src/assets/person/person3.jpg" },
+    { "id": 4, "name": "Sofía Torres", "avatar": "/src/assets/person/person4.jpg" },
+    { "id": 5, "name": "Pedro López", "avatar": "/src/assets/person/person5.jpg" }
+  ],
+  "photos": [
+    { "id": 1, "url": "/src/assets/posts/post1.jpg" },
+    { "id": 2, "url": "/src/assets/posts/post2.jpg" },
+    { "id": 3, "url": "/src/assets/posts/post3.jpg" },
+    { "id": 4, "url": "/src/assets/posts/post4.jpg" },
+    { "id": 5, "url": "/src/assets/posts/post5.jpg" },
+    { "id": 6, "url": "/src/assets/posts/post6.jpg" },
+    { "id": 5, "url": "/src/assets/posts/post7.jpg" },
+    { "id": 6, "url": "/src/assets/posts/post8.jpg" }
+  ]
+}
