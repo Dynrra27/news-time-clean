@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "title": "Desarrollador Frontend (React)",
+    "company": "Tech Solutions Inc.",
+    "companyLogo": "/src/assets/ads/adv2.png",
+    "location": "Remoto",
+    "description": "Buscamos un desarrollador frontend senior con experiencia en React, JavaScript moderno y Tailwind CSS.",
+    "applications": 12,
+    "pastJobs": [
+      { "id": 101, "title": "Diseñador Gráfico", "date": "Publicado en Julio 2024" },
+      { "id": 102, "title": "Especialista en Marketing Digital", "date": "Publicado en Enero 2025" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Diseñador UX/UI",
+    "company": "Creative Agency",
+    "companyLogo": "/src/assets/ads/adv2.png",
+    "location": "Santo Domingo, RD",
+    "description": "Se busca un diseñador creativo para unirse a nuestro equipo de producto. Experiencia en Figma y prototipado es un plus.",
+    "applications": 5,
+    "pastJobs": []
+  },
+  {
+    "id": 3,
+    "title": "Gerente de Proyectos",
+    "company": "Global Corp",
+    "companyLogo": "/src/assets/ads/adv2.png",
+    "location": "Nueva York",
+    "description": "Necesitamos un gerente de proyectos experimentado para supervisar un equipo de desarrollo de software.",
+    "applications": 20,
+    "pastJobs": [
+      { "id": 201, "title": "Asistente Administrativo", "date": "Publicado en Marzo 2024" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Gerente de Comercial",
+    "company": "Global Corp",
+    "companyLogo": "/src/assets/ads/adv2.png",
+    "location": "Nueva York",
+    "description": "Necesitamos un gerente de Comercial experimentado para supervisar un equipo de desarrollo de software.",
+    "applications": 20,
+    "pastJobs": [
+      { "id": 201, "title": "Asistente Administrativo", "date": "Publicado en Marzo 2024" }
+    ]
+  }
+]
