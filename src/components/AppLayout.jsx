@@ -8,22 +8,16 @@ import ProfileContent from './profile/ProfileContent';
 import JobSearchPage from './empleos/JobSearchPage';
 import JobDetailsPage from './empleos/JobDetailsPage';
 import CommentModal from './CommentModal';
+import CreatePostModal from './CreatePostModal';
+import CreateStoryModal from './CreateStoryModal';
 import postsData from '../data/posts.json';
+import useModal from '../hooks/useModal';
 
 const AppLayout = () => {
     const [posts, setPosts] = useState(postsData);
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [postToComment, setPostToComment] = useState(null);
-
-    const openCommentModal = (post) => {
-        setPostToComment(post);
-        setIsModalOpen(true);
-    };
-
-    const closeCommentModal = () => {
-        setIsModalOpen(false);
-        setPostToComment(null);
-    };
+    const { isOpen: isCommentModalOpen, modalData: postToComment, openModal: openCommentModal, closeModal: closeCommentModal } = useModal();
+    const { isOpen: isCreatePostModalOpen, openModal: openCreatePostModal, closeModal: closeCreatePostModal } = useModal();
+    const { isOpen: isCreateStoryModalOpen, openModal: openCreateStoryModal, closeModal: closeCreateStoryModal } = useModal();
 
     const handleNewComment = (postId, commentText) => {
         setPosts(prevPosts =>
@@ -45,16 +39,17 @@ const AppLayout = () => {
                 return post;
             })
         );
+        closeCommentModal();
     };
 
     return (
         <div className="min-h-screen bg-gray-100">
-            <Navbar />
+            <Navbar openModal={openCreatePostModal} />
             <div className="flex max-w-7xl mx-auto pt-32 px-4 sm:px-6 lg:px-8">
                 <SidebarLeft />
                 <main className="flex-1 w-2/4 px-0 md:px-4">
                     <Routes>
-                        <Route path="/" element={<FeedContent posts={posts} openCommentModal={openCommentModal} />} />
+                        <Route path="/" element={<FeedContent posts={posts} openCommentModal={openCommentModal} openCreatePostModal={openCreatePostModal} openCreateStoryModal={openCreateStoryModal} />} />
                         <Route path="/profile/*" element={<ProfileContent />} />
                         <Route path="/jobs" element={<JobSearchPage />} />
                         <Route path="/jobs/:id" element={<JobDetailsPage />} />
@@ -62,9 +57,11 @@ const AppLayout = () => {
                 </main>
                 <SidebarRight />
             </div>
-            {isModalOpen && postToComment && (
+            <CreatePostModal isOpen={isCreatePostModalOpen} onClose={closeCreatePostModal} />
+            <CreateStoryModal isOpen={isCreateStoryModalOpen} onClose={closeCreateStoryModal} />
+            {isCommentModalOpen && postToComment && (
                 <CommentModal
-                    isOpen={isModalOpen}
+                    isOpen={isCommentModalOpen}
                     onClose={closeCommentModal}
                     post={postToComment}
                     onComment={handleNewComment}

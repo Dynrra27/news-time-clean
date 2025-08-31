@@ -7,29 +7,33 @@
     "text": "¡Qué día tan increíble en la playa! ¡Amo el sol y el mar!",
     "image": "/src/assets/posts/post1.jpg",
     "likes": 120,
-    "commentsCount": 15,
-    "views": 2500
+    "commentsCount": 2,
+    "views": 2500,
+    "comments": [
+      {
+        "id": 1,
+        "userName": "Juan Pérez",
+        "userAvatar": "/src/assets/person/person1.jpg",
+        "text": "¡Qué envidia! Se ve genial.",
+        "timeAgo": "Hace 2 minutos"
+      },
+      {
+        "id": 2,
+        "userName": "Ana Gómez",
+        "userAvatar": "/src/assets/person/person2.jpg",
+        "text": "¡Espero que te diviertas!",
+        "timeAgo": "Hace 1 minuto"
+      }
+    ]
   },
   {
     "id": 2,
-    "userAvatar": "/src/assets/person/person1.jpg",
-    "userName": "Carlos Pérez",
+    "userAvatar": "/src/assets/person/user.jpg",
     "timeAgo": "Hace 2 horas",
     "text": "Trabajando en mi nuevo proyecto de diseño web. ¡Me encanta este reto!",
-    "image": null,
     "likes": 85,
-    "commentsCount": 7,
-    "views": 1800
-  },
-  {
-    "id": 3,
-    "userAvatar": "/src/assets/person/person2.jpg",
-    "userName": "AnaUser",
-    "timeAgo": "Hace un día",
-    "text": "Un buen café para empezar el día. ☕",
-    "image": "/src/assets/posts/post2.jpg",
-    "likes": 200,
-    "commentsCount": 35,
-    "views": 4000
+    "commentsCount": 0,
+    "views": 1800,
+    "comments": []
   }
 ]

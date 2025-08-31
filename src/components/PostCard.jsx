@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const PostCard = ({ post, openCommentModal }) => {
+const PostCard = ({ post, openModal }) => {
   const [likesCount, setLikesCount] = useState(post.likes);
   const [isLiked, setIsLiked] = useState(false);
   const [commentsCount, setCommentsCount] = useState(post.commentsCount);
@@ -18,7 +18,7 @@ const PostCard = ({ post, openCommentModal }) => {
   };
 
   const handleCommentClick = () => {
-    openCommentModal(post);
+    openModal('comment', post);
   };
 
   const handleShare = () => {
@@ -30,7 +30,7 @@ const PostCard = ({ post, openCommentModal }) => {
   };
 
   const handleCommentTooltip = (hasComments) => {
-    setCommentTooltip(hasComments ? 'Ver comentarios' : 'Sé el primero en comentar');
+    setCommentTooltip(hasComments > 0 ? 'Ver comentarios' : 'Sé el primero en comentar');
   };
 
   return (
@@ -57,25 +57,15 @@ const PostCard = ({ post, openCommentModal }) => {
       <footer className="text-gray-600 text-sm pt-3 border-t border-gray-200">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <button
-              onClick={handleLike}
-              onMouseEnter={() => handleLikeTooltip(isLiked)}
-              onMouseLeave={() => setLikeTooltip('')}
-              className={`relative flex items-center space-x-1 transition-colors ${isLiked ? 'text-red-500' : 'text-gray-600 hover:text-red-500'}`}
-            >
+            <button onClick={handleLike} className={`flex items-center space-x-1 hover:text-red-500 transition-colors ${isLiked ? 'text-red-500' : 'text-gray-600'}`}>
               <i className={`${isLiked ? 'fas fa-heart' : 'far fa-heart'}`}></i>
               <span>{likesCount}</span>
-              {likeTooltip && (
-                <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded-lg py-1 px-2 whitespace-nowrap">
-                  {likeTooltip}
-                </div>
-              )}
             </button>
-            <button
-              onClick={handleCommentClick}
-              onMouseEnter={() => handleCommentTooltip(commentsCount > 0)}
-              onMouseLeave={() => setCommentTooltip('')}
-              className="relative flex items-center space-x-1 hover:text-blue-500 transition-colors"
+            <button 
+                onClick={handleCommentClick} 
+                onMouseEnter={() => handleCommentTooltip(commentsCount)}
+                onMouseLeave={() => setCommentTooltip('')}
+                className="relative flex items-center space-x-1 hover:text-blue-500 transition-colors"
             >
               <i className="far fa-comment"></i>
               <span>{commentsCount}</span>

@@ -1,6 +1,7 @@
 [
-  { "id": 1, "username": "tú", "img": "/src/assets/stories/story1.jpg" },
-  { "id": 2, "username": "Ana", "img": "/src/assets/stories/story2.jpg" },
-  { "id": 3, "username": "Carlos", "img": "/src/assets/stories/story3.jpg" },
-  { "id": 4, "username": "Sofía", "img": "/src/assets/stories/story4.jpg" }
+  { "id": 1, "username": "tú", "img": "/src/assets/stories/story1.jpg", "isViewed": false },
+  { "id": 2, "username": "Ana", "img": "/src/assets/stories/story2.jpg", "isViewed": false },
+  { "id": 3, "username": "Carlos", "img": "/src/assets/stories/story5.jpg", "isViewed": false },
+  { "id": 4, "username": "Sofía", "img": "/src/assets/stories/story4.jpg", "isViewed": false },
+  { "id": 5, "username": "milka", "img": "/src/assets/stories/story2.jpg", "isViewed": false }
 ]

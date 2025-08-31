@@ -10,16 +10,17 @@ const CommentModal = ({ isOpen, onClose, post, onComment }) => {
         if (commentText.trim()) {
             onComment(post.id, commentText);
             setCommentText('');
+            console.log("Nuevo comentario añadido al post:", post.userName, commentText);
         }
         onClose();
     };
 
     if (!isOpen || !post) return null;
 
-    const hasComments = post.comments && post.comments.length > 0;
+    const hasComments = post.comments && post.comments.length && post.id > 0;
 
     return (
-        <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50 flex justify-center items-center">
+        <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50 flex justify-center items-center" onClick={onClose}>
             <div className="bg-white p-6 rounded-lg shadow-xl max-w-lg w-full m-4 relative max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
                 <button onClick={onClose} className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 transition-colors">
                     <i className="fas fa-times"></i>
